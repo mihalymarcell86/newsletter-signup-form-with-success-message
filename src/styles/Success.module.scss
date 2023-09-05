@@ -1,0 +1,41 @@
+@use "util/global" as *;
+
+.main {
+  padding: rem(149px) rem(24px) rem(40px);
+}
+
+.icon {
+  margin-bottom: rem(40px);
+}
+
+.heading {
+  font-size: rem(40px);
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: rem(24px);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.button {
+  width: 100%;
+  background-color: var(--clr-button-bg);
+  color: var(--clr-button-text);
+  border: 0;
+  border-radius: rem(8px);
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: rem(263px);
+  padding: {
+    top: rem(18px);
+    bottom: rem(14px);
+  }
+  cursor: pointer;
+  &:hover,
+  &:active {
+    background-image: $gradient1;
+    box-shadow: 0px 16px 32px 0px #ff615580;
+  }
+}

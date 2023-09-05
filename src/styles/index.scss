@@ -1,0 +1,33 @@
+@use "./util/global" as *;
+
+@include setup;
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Bold.ttf");
+  font-weight: 700;
+}
+
+:root {
+  --clr-text: #{$dark-slate-grey};
+  --clr-input-border: #{$grey-25};
+  --clr-input-border-focus: #{$dark-slate-grey};
+  --clr-button-bg: #{$dark-slate-grey};
+  --clr-button-text: #{$white};
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--clr-text);
+  line-height: 1.5;
+}
+
+button {
+  font-family: inherit;
+}

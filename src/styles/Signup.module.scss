@@ -1,0 +1,26 @@
+@use "util/global" as *;
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: rem(40px);
+}
+
+.text {
+  @extend .main;
+  gap: rem(24px);
+  padding-inline: rem(24px);
+}
+
+.heading {
+  font-size: rem(40px);
+  line-height: 1;
+  font-weight: 700;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: rem(21px) 1fr;
+  column-gap: rem(16px);
+  row-gap: rem(10px);
+}

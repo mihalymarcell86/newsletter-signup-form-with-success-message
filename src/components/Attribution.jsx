@@ -17,7 +17,7 @@ export default function Attribution() {
         target="_blank"
         rel="noreferrer"
       >
-        Your Name Here
+        Marcell Mihály
       </a>
       .
     </div>
