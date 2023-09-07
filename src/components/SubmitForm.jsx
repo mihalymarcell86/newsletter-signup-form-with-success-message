@@ -1,4 +1,5 @@
 import style from "../styles/SubmitForm.module.scss";
+import Button from "./UI/Button";
 
 export default function SubmitForm() {
   return (
@@ -9,7 +10,7 @@ export default function SubmitForm() {
         placeholder="email@company.com"
         className={style.input}
       ></input>
-      <button className={style.button}>Subscribe to monthly newsletter</button>
+      <Button>Subscribe to monthly newsletter</Button>
     </form>
   );
 }

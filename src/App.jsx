@@ -4,7 +4,7 @@ import Success from "./components/Success";
 import { useState } from "react";
 
 function App() {
-  const [isSubmitted] = useState(true);
+  const [isSubmitted] = useState(false);
 
   return (
     <>

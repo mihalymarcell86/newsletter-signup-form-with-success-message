@@ -15,6 +15,8 @@
 }
 
 :root {
+  --clr-bg: #{$charcoal-grey};
+  --clr-bg-main: #{$white};
   --clr-text: #{$dark-slate-grey};
   --clr-input-border: #{$grey-25};
   --clr-input-border-focus: #{$dark-slate-grey};
@@ -26,6 +28,25 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--clr-text);
   line-height: 1.5;
+  min-height: 100dvh;
+  background-color: var(--clr-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  max-width: rem(450px);
+  background-color: var(--clr-bg-main);
+  box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  @media (min-width: 450px) {
+    border-radius: rem(36px);
+  }
+}
+
+picture {
+  font-size: 0;
 }
 
 button {

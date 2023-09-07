@@ -1,21 +1,48 @@
 @use "util/global" as *;
 
-.main {
+%flex-col {
   display: flex;
   flex-direction: column;
+}
+
+.main {
+  @extend %flex-col;
   gap: rem(40px);
+  @media (min-width: $bp1) {
+    flex-direction: row-reverse;
+    align-items: center;
+    max-width: rem(928px);
+    padding: rem(24px) rem(24px) rem(24px) rem(64px);
+    gap: rem(64px);
+  }
+}
+
+.illustration {
+  img {
+    width: 100%;
+  }
+  @media (min-width: $bp1) {
+    flex-basis: rem(400px);
+    flex-shrink: 0;
+  }
 }
 
 .text {
-  @extend .main;
+  @extend %flex-col;
   gap: rem(24px);
   padding-inline: rem(24px);
+  @media (min-width: $bp1) {
+    padding-inline: 0;
+  }
 }
 
 .heading {
   font-size: rem(40px);
   line-height: 1;
   font-weight: 700;
+  @media (min-width: $bp1) {
+    font-size: rem(56px);
+  }
 }
 
 .list {
@@ -23,4 +50,5 @@
   grid-template-columns: rem(21px) 1fr;
   column-gap: rem(16px);
   row-gap: rem(10px);
+  margin-bottom: rem(40px);
 }

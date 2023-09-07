@@ -1,0 +1,24 @@
+@use "util/global" as *;
+
+.button {
+  width: 100%;
+  background-color: var(--clr-button-bg);
+  color: var(--clr-button-text);
+  border: 0;
+  border-radius: rem(8px);
+  font-size: rem(16px);
+  font-weight: 700;
+  line-height: 1.5;
+  padding: {
+    top: rem(18px);
+    bottom: rem(14px);
+  }
+  cursor: pointer;
+  &:hover,
+  &:active,
+  &:focus {
+    background-image: $gradient1;
+    box-shadow: 0px 16px 32px 0px #ff615580;
+    outline: 0;
+  }
+}
