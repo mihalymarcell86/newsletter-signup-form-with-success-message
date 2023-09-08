@@ -11,6 +11,11 @@
   }
 }
 
+.label_container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .label {
   display: block;
   font-size: rem(12px);
@@ -35,4 +40,16 @@
   &::placeholder {
     color: color.change($dark-slate-grey, $alpha: 0.5);
   }
+}
+
+.input_error {
+  border-color: var(--clr-input-error);
+  color: var(--clr-input-error);
+  background-color: color.change($tomato, $alpha: 0.149);
+}
+
+.error_message {
+  font-size: rem(12px);
+  font-weight: 700;
+  color: var(--clr-input-error);
 }

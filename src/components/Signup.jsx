@@ -3,8 +3,9 @@ import illustration_mobile from "../assets/images/illustration-sign-up-mobile.sv
 import illustration_desktop from "../assets/images/illustration-sign-up-desktop.svg";
 import list_icon from "../assets/images/icon-list.svg";
 import style from "../styles/Signup.module.scss";
+import propTypes from "prop-types";
 
-export default function Signup() {
+export default function Signup({ emailState, submit }) {
   return (
     <main className={style.main}>
       <picture className={style.illustration}>
@@ -24,8 +25,13 @@ export default function Signup() {
             <p>And much more!</p>
           </div>
         </section>
-        <SubmitForm />
+        <SubmitForm emailState={emailState} submit={submit} />
       </div>
     </main>
   );
 }
+
+Signup.propTypes = {
+  emailState: propTypes.array.isRequired,
+  submit: propTypes.func.isRequired,
+};

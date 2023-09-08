@@ -4,11 +4,16 @@ import Success from "./components/Success";
 import { useState } from "react";
 
 function App() {
-  const [isSubmitted] = useState(true);
+  const submitState = useState(false);
+  const emailState = useState("");
 
   return (
     <>
-      {isSubmitted ? <Success /> : <Signup />}
+      {submitState[0] ? (
+        <Success emailState={emailState} submit={submitState[1]} />
+      ) : (
+        <Signup emailState={emailState} submit={submitState[1]} />
+      )}
       <Attribution />
     </>
   );
