@@ -1,7 +1,13 @@
+@use "util/global" as *;
+
 .attribution {
+  color: var(--clr-attribution);
   font-size: 11px;
-  text-align: center;
-  display: none;
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  translate: -50%;
+  z-index: -1;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);

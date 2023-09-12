@@ -15,7 +15,7 @@ export default function SubmitForm({ emailState, submit }) {
   }
 
   function validate(val) {
-    if (isEmpty(val)) setError("This is field is required");
+    if (isEmpty(val)) setError("This field is required");
     else if (!isEmail(val)) setError("Valid email required");
     else setError(null);
   }
