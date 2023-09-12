@@ -2,7 +2,7 @@ import style from "../styles/Attribution.module.scss";
 
 export default function Attribution() {
   return (
-    <div className={style.attribution}>
+    <footer className={style.attribution}>
       Challenge by{" "}
       <a
         href="https://www.frontendmentor.io?ref=challenge"
@@ -20,6 +20,6 @@ export default function Attribution() {
         Marcell Mihály
       </a>
       .
-    </div>
+    </footer>
   );
 }
