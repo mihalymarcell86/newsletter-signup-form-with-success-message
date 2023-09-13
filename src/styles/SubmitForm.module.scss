@@ -33,6 +33,8 @@
   padding: rem(16px) rem(24px);
   margin-bottom: rem(24px);
   color: var(--clr-text);
+  font-size: rem(16px);
+  line-height: 1.5;
   &:focus,
   &:active {
     border-color: var(--clr-input-border-focus);
