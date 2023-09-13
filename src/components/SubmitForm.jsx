@@ -36,12 +36,16 @@ export default function SubmitForm({ emailState, submit }) {
   return (
     <form className={style.form} onSubmit={handleSubmit} noValidate>
       <div className={style.label_container}>
-        <label className={style.label}>Email address</label>
+        <label className={style.label} htmlFor="email">
+          Email address
+        </label>
         {error && <p className={style.error_message}>{error}</p>}
       </div>
       <input
+        id="email"
         type="email"
         placeholder="email@company.com"
+        autoComplete="email"
         className={`${style.input} ${error ? style.input_error : ""}`}
         value={email}
         onChange={handleChange}
